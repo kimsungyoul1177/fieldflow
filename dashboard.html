@@ -1,24 +1,150 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"></meta>
-<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-<title>FieldFlow Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FieldFlow 운영 대시보드</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
 <style>
-body{margin:0;font-family:Arial;background:#0f172a;color:#fff;padding:40px;}
-.box{max-width:1000px;margin:auto;background:#111827;padding:40px;border-radius:20px;}
-h1{margin:0 0 20px;}
-.card{background:#1f2937;padding:20px;border-radius:16px;margin-bottom:16px;}
-a{color:#93c5fd;text-decoration:none;}
+body{
+  margin:0;
+  font-family:'Pretendard',sans-serif;
+  background:#0f172a;
+  color:white;
+  padding:50px;
+  font-size:18px;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+h1{
+  margin-top:0;
+  font-size:40px;
+}
+h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+.section{
+  margin-top:60px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+.card{
+  background:#1f2937;
+  padding:30px;
+  border-radius:20px;
+}
+.card h3{
+  margin-top:0;
+  font-size:22px;
+}
+.card p{
+  font-size:18px;
+}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
+  margin-top:15px;
+}
+.ok{background:#16a34a;}
+.warn{background:#f59e0b;}
+.info{background:#2563eb;}
+a{
+  color:#93c5fd;
+  text-decoration:none;
+  font-size:18px;
+}
 </style>
 </head>
+
 <body>
-<div class="box">
-<h1>FieldFlow � ��ú���</h1>
-<p>Ȩ������ �� �ν�Ÿ�׷� �� ���̹� �÷��̽� � ���¸� �Ѵ��� ���ϴ�.</p>
-<div class="card"><h3>Ȩ������ ����</h3><p>�ֽ� ���� ���� �� ���� ���� ����</p></div>
-<div class="card"><h3>�ν�Ÿ�׷� �</h3><p>�� 2~3ȸ ������ ���ε�</p></div>
-<div class="card"><h3>���̹� �÷��̽� ����</h3><p>���� �� ���� �� ���� ����</p></div>
+<div class="container">
+
+<h1>FieldFlow 운영 대시보드</h1>
+<p>홈페이지 · 인스타그램 · 네이버 플레이스 · 광고 · 전환 흐름까지 관리합니다.</p>
+
+<div class="section">
+<h2>핵심 운영 현황</h2>
+<div class="grid">
+<div class="card">
+<h3>홈페이지</h3>
+<p>정보 최신화 · 가격 · 연락처 · 사례 점검</p>
+<span class="badge ok">정기 점검중</span>
+</div>
+
+<div class="card">
+<h3>인스타그램</h3>
+<p>주 2~3회 콘텐츠 업로드</p>
+<span class="badge info">콘텐츠 제작중</span>
+</div>
+
+<div class="card">
+<h3>네이버 플레이스</h3>
+<p>사진 · 키워드 · 리뷰 대응</p>
+<span class="badge ok">관리중</span>
+</div>
+
+<div class="card">
+<h3>광고 세팅</h3>
+<p>기본 검색 광고 관리</p>
+<span class="badge warn">최적화 필요</span>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>문의 흐름 점검</h2>
+<div class="grid">
+<div class="card">
+<h3>전화 전환</h3>
+<p>통화 연결 흐름 점검</p>
+</div>
+
+<div class="card">
+<h3>문자 유입</h3>
+<p>문자 응대 속도 관리</p>
+</div>
+
+<div class="card">
+<h3>상담 폼</h3>
+<p>폼 작성 후 응답 체계 관리</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>운영 체크리스트</h2>
+<div class="grid">
+<div class="card">
+<h3>콘텐츠 기획</h3>
+<p>시공 전/후 · 작업 과정 · 고객 질문 정리</p>
+</div>
+
+<div class="card">
+<h3>월간 요약 리포트</h3>
+<p>요청 시 운영 현황 요약 제공</p>
+</div>
+
+<div class="card">
+<h3>운영 구조 개선</h3>
+<p>전환율 개선 중심 점검</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<p><a href="./index.html">← 홈으로 돌아가기</a></p>
+</div>
+
 </div>
 </body>
 </html>
